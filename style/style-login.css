@@ -178,39 +178,6 @@ button {
     gap: 10px;
     text-decoration: none;
 }
-
-@media screen and (max-width: 768px) {
-    header {
-        align-content: center;
-        height: 74px;
-        width: 100%;
-        padding: 28px 20px;
-        border-radius: 0;       
-    }
-
-    header img {
-        height: 22.56px;
-        margin: 0;
-    }
-
-    main {
-        padding: 28px 20px;
-        display: block;
-        gap: 24px;
-
-    }
-
-    .container {
-        display: flex;
-        width: 90vw;
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5%;
-    }
-}
-
 /* login page */
 
 .phone-container {
@@ -283,3 +250,45 @@ option {
 [data-flag="th"] {
     background-image: url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/th.svg');
 }
+
+
+@media screen and (max-width: 768px) {
+    header {
+        align-content: center;
+        height: 74px;
+        width: 100%;
+        padding: 28px 20px;
+        border-radius: 0;       
+    }
+
+    header img {
+        height: 22.56px;
+        margin: 0;
+    }
+
+    main {
+        padding: 28px 20px;
+        display: block;
+        gap: 24px;
+
+    }
+
+    .container {
+        display: flex;
+        width: 90vw;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+    }
+
+    select {
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-origin: content-box;
+        background-color: rgb(248, 248, 248);
+        width: 165px;
+    }
+}
+
