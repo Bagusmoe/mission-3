@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f6582b7b44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" href="assets/img/logo-title.png">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="">
+    </header>
+    <main>
+        <div class="container">
+        <div class="title-login">
+            <h1>Pendaftaran Akun</h1>
+            <p>Yuk, daftarkan akunmu sekarang juga!</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="name">Nama <span class="red">*</span></label>
+                <input type="text" id="name" placeholder="babymonster" required>
+                <label for="email">Email <span class="red">*</span></label>
+                <input type="email" id="email" placeholder="babymonster@yg.co.id" required>
+                <div class="phone-container">
+                <label for="countryCode">No. HP: <span class="red">*</span></label>
+                <div class="phone">
+                <select id="countryCode">
+                    <option value="+86" data-flag="cn">(+86) </option>
+                    <option value="+91" data-flag="in">(+91) </option>
+                    <option value="+81" data-flag="jp">(+81) </option>
+                    <option value="+62" data-flag="id">(+62) </option>
+                    <option value="+82" data-flag="kr">(+82) </option>
+                    <option value="+63" data-flag="ph">(+63) </option>
+                    <option value="+92" data-flag="pk">(+92) </option>
+                    <option value="+90" data-flag="tr">(+90) </option>
+                    <option value="+60" data-flag="my">(+60) </option>
+                    <option value="+66" data-flag="th">(+66) </option>
+                </select>
+                <input type="tel" id="phoneNumber" placeholder="Enter phone number" required>
+                </div>                
+                </div>
+                <label for="password">Kata Sandi <span class="red">*</span></label>
+                <div class="password">
+                <div class="psswd-tggl">
+                <span class="icon"><i class='fas fa-eye-slash'></i></span>
+                <input type="password" id="password" placeholder="********" required>
+                </div>
+                </div>
+                <label for="password">Konfirmasi Kata Sandi <span class="red">*</span></label>
+                <div class="password">
+                <div class="psswd-tggl">
+                <span class="icon"><i class='fas fa-eye-slash'></i></span>
+                <input type="password" id="password" placeholder="********" required>
+                </div>
+                </div>
+                <button type="button" class="button-1">Daftar</button>
+                <button type="submit" class="button-2"><a href="login.html">Masuk</a></button>
+                <div class="line">
+                <h5 class="or">Atau</h5>
+                </div>
+                <a class="google" href=""><img src="assets/img/g-icon.png" alt=""> Masuk dengan Google</i></a>   
+            </form>
+        </div>
+        </div>
+    </main>
+</body>
+</html>

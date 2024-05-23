@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Bottom on Hover</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+            margin-bottom: 20px; /* Spasi antara item */
+        }
+
+        li::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -5px; /* Sesuaikan jarak dari teks */
+            width: 0;
+            border-bottom: 2px solid black; /* Gaya border */
+            transition: width 0.3s, left 0.3s; /* Animasi saat hover */
+        }
+
+        li:hover::after {
+            width: 75%; /* Sesuaikan panjang border saat hover */
+            left: 12.5%; /* (100% - 75%) / 2 untuk membuatnya berpusat */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</body>
+</html>
